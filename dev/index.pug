@@ -1,0 +1,54 @@
+doctype
+html(lang ="en")
+	head
+		include ./parts/head
+	body
+		.todo
+			.wrapper
+				h1.todo__title
+					| Список
+				.todo__item.d-flex.align-items-center.active
+					label.check
+						input(type="checkbox" checked="checked")
+						.box
+					.todo__info
+						.todo__info--title.active
+							|Задача
+						.todo__info--text
+							|Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+					button.delete
+						i.far.fa-trash-alt
+				.todo__item.d-flex.align-items-center
+					label.check
+						input(type="checkbox")
+						.box
+					.todo__info
+						.todo__info--title
+							|Задача
+						.todo__info--text
+							|Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые.
+					button.delete
+						i.far.fa-trash-alt
+				.todo__item.d-flex.align-items-center
+					label.check
+						input(type="checkbox")
+						.box
+					.todo__info
+						.todo__info--title
+							|Задача
+						.todo__info--text
+							|Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML.
+					button.delete
+						i.far.fa-trash-alt
+		.wrapper
+			.todo__line
+			h2.todo__title-min
+				|НОВАЯ
+			.todo__item
+				form.todo__form
+					input(type="text" placeholder="Название здачи").todo__form--input
+					.d-flex-f
+						textarea(name="text" placeholder="Описание задачи").todo__form--textarea
+						.todo__item--btn
+							button(type="submit").btn
+								|Добавить

@@ -1,0 +1,303 @@
+.row{
+	margin: 0 -15px;
+	[class*='col-']{
+		padding: 0 15px;
+	}
+}
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.wrapper{
+  position: relative;
+  max-width: 1010px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+// mobileonly
+
+.col-m-1{
+  @include breakpoint(mobileonly){
+    flex:100%;
+    max-width:100%;
+  }
+}
+
+.col-m-3-4{
+  @include breakpoint(mobileonly){
+    flex:75%;
+    max-width:75%;
+  }
+}
+
+.col-m-2-3{
+  @include breakpoint(mobileonly){
+    flex:66.6%;
+    max-width:66.6%;
+  }
+}
+
+.col-m-2x{
+  @include breakpoint(mobileonly){
+    flex:50%;
+    max-width:50%;
+  }
+}
+
+.col-m-3x{
+  @include breakpoint(mobileonly){
+    flex:33.3%;
+    max-width:33.3%;
+  }
+}
+
+.col-m-4x{
+  @include breakpoint(mobileonly){
+    flex:25%;
+    max-width:25%;
+  }
+}
+
+// mobileonly
+
+// phablet
+
+.col-f-1{
+  @include breakpoint(phablet){
+    flex:100%;
+    max-width:100%;
+  }
+}
+
+.col-f-9-10{
+  @include breakpoint(phablet){
+    flex:90%;
+    max-width:90%;
+  }
+}
+.col-f-3-4{
+  @include breakpoint(phablet){
+    flex:75%;
+    max-width:75%;
+  }
+}
+
+.col-f-2-3{
+  @include breakpoint(phablet){
+    flex:66.6%;
+    max-width:66.6%;
+  }
+}
+
+.col-f-2x{
+  @include breakpoint(phablet){
+    flex:50%;
+    max-width:50%;
+  }
+}
+
+.col-f-3x{
+	@include breakpoint(phablet){
+    flex:33.3%;
+    max-width:33.3%;
+  }
+}
+
+.col-f-4x{
+	@include breakpoint(phablet){
+    flex:25%;
+    max-width:25%;
+  }
+}
+
+.col-f-5x{
+  @include breakpoint(phablet){
+    flex:20%;
+    max-width:20%;
+  }
+}
+.col-f-1-10{
+  @include breakpoint(phablet){
+    flex:10%;
+    max-width:10%;
+  }
+}
+.d-flex-f {
+    @include breakpoint(phablet){
+      display: -webkit-box!important;
+      display: -ms-flexbox!important;
+      display: flex!important;
+    }
+}
+// phablet
+
+// tablet
+
+.col-t-3-4{
+  @include breakpoint(tablet){
+    flex:75%;
+    max-width:75%;
+  }
+}
+
+.col-t-3-2{
+  @include breakpoint(tablet){
+    flex:66.66%;
+    max-width:66.66%;
+  }
+}
+
+.col-t-2x{
+  @include breakpoint(tablet){
+    flex:50%;
+    max-width:50%;
+  }
+}
+
+.col-t-3x{
+  @include breakpoint(tablet){
+    flex:33.3%;
+    max-width:33.3%;
+  }
+}
+
+.col-t-4x{
+  @include breakpoint(tablet){
+    flex:25%;
+    max-width:25%;
+  }
+}
+
+.col-t-5x{
+  @include breakpoint(tablet){
+    flex:20%;
+    max-width:20%;
+  }
+}
+
+.flex-space-between-t{
+  @include breakpoint(tablet){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+.flex-vertical-center-t{
+  @include breakpoint(tablet){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+
+.flex-row-reverse{
+    @include breakpoint(tablet){
+        flex-direction: row-reverse;
+  }
+}
+
+// tablet
+
+// laptop
+
+.col-l-3-4{
+  @include breakpoint(laptop){
+    flex:75%;
+    max-width:75%;
+  }
+}
+
+.col-l-2-3{
+  @include breakpoint(laptop){
+    flex:66.6%;
+    max-width:66.6%;
+  }
+}
+
+.col-l-2x{
+  @include breakpoint(laptop){
+    flex:left;
+    max-width:50%;
+  }
+}
+
+.col-l-3x{
+  @include breakpoint(laptop){
+    flex:33.3%;
+    max-width: 33.3%;
+  }
+}
+
+.col-l-4x{
+  @include breakpoint(laptop){
+    flex:25%;
+    max-width:25%;
+  }
+}
+
+.col-l-1-6{
+  @include breakpoint(laptop){
+    flex:16.6666%;
+    max-width:16.6666%;
+  }
+}
+
+.col-l-9x{
+  @include breakpoint(laptop){
+    flex:11.11%;
+    max-width:11.11%;
+  }
+}
+
+.flex-space-between-l{
+  @include breakpoint(laptop){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+.flex-vertical-center-l{
+  @include breakpoint(laptop){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+
+// laptop

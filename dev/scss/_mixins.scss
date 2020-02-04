@@ -1,0 +1,30 @@
+@mixin breakpoint($point) {
+ 	@if $point == exlarge {
+    	@media (min-width: 95em) { @content ; }
+  	}
+	@if $point == large {
+    	@media (min-width: 85em) { @content ; }
+  	}
+	@if $point == desktop {
+		@media (min-width: 70em) { @content ; }
+	}
+	@else if $point == laptop {
+		@media (min-width: 64em) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (min-width: 54em) { @content ; }
+	}
+	@else if $point == phablet {
+		@media (min-width: 37.5em)  { @content ; }
+	}
+	@else if $point == mobileonly {
+		@media (max-width: 37.5em)  { @content ; }
+		}
+	@else if $point == mobileonlylandscape {
+		@media (max-width: 37.5em) and (orientation: landscape)  { @content ; }
+	}
+}
+@mixin fstoRem($pixels) {
+	font-size: $pixels*1px;
+	font-size: $pixels/16*1rem;
+}
